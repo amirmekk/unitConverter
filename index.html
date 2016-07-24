@@ -9,16 +9,21 @@
 	height : auto
 	}
 	</style>
+	<!-- <link href='m.min.css' rel='stylesheet' type='text/css' /> -->
+	<link href='style.css' rel='stylesheet' type='text/css' />
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"> 
 </head>
 <body>
-	<h1>Welcome to my Units Converter</h1>
+	<h1 id='firstH'>Welcome to my Units Converter</h1>
 	<form>
-		<input id='firstInput' type='text' placeholder="Enter kilometers here"  />
+		<p id='firstText'>Kilometers</p><input id='firstInput' type='text' placeholder="Enter A Number"  />
 		<!-- <img src='arrow.png' alt="change" />  -->
-		<input id='secondInput' type='text' placeholder="Enter Miles here"  /><br />
+		<p id='secondText'>Miles</p><input id='secondInput' type='text' placeholder="Enter A Number"  /><br />
 		
 	</form>
-	<button id='weightButton'>kilogrames/pounds</button>
+	<p>All The Popular Convertations:</p>
+	<button id='weightButton'>Kilogrames/Pounds</button>
+	<button id='digreeButton'>Fehrenhait/Celecuis</button><br />
 	<button id='clear'>clear</button>
 	<p id='alert'></p>
 	<script src='../jq.js'></script>
