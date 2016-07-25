@@ -3,27 +3,54 @@
 <head>
 	<title>Unit Converter</title>
 	<meta charset='UTF-8' />
-	<style>
-	img {
-	width : 10% ;
-	height : auto
-	}
-	</style>
 	<!-- <link href='m.min.css' rel='stylesheet' type='text/css' /> -->
 	<link href='style.css' rel='stylesheet' type='text/css' />
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"> 
 </head>
 <body>
 	<h1 id='firstH'>Welcome to my Units Converter</h1>
-	<form>
-		<p id='firstText'>Kilometers</p><input id='firstInput' type='text' placeholder="Enter A Number"  />
+	<form id='form1'>
+			<p id='firstText'>Kilometers</p><input id='firstInput' type='text' placeholder="Enter A Number"  />
+	</form>
 		<!-- <img src='arrow.png' alt="change" />  -->
-		<p id='secondText'>Miles</p><input id='secondInput' type='text' placeholder="Enter A Number"  /><br />
+	<form id='form2'>
+			<p id='secondText'>Miles</p><input id='secondInput' type='text' placeholder="Enter A Number"  /><br />
 		
 	</form>
-	<p>All The Popular Convertations:</p>
-	<button id='weightButton'>Kilogrames/Pounds</button>
-	<button id='digreeButton'>Fehrenhait/Celecuis</button><br />
+	<div id='length'>
+	<p>length</p>
+	<button id='distanceButton'>Kilometer/Mile</button>
+	<button id='distanceButton1'>Centimeter/Inche</button>	
+	<button id='distanceButton2'>Meter/Yard</button>
+	<button id='distanceButton3'>Meter/Feet</button>
+	<button id='distanceButton4'>Centimeter/Feet</button>
+	<button id='distanceButton5'>Inch/Feet</button>
+	</div>
+	<div id='weight'>
+	<p>weight</p>
+	<button id='weightButton'>Kilograme/Pound</button>
+	<button id='weightButton1'>Kilogram/Ounce</button>
+	<button id='weightButton2'>Gram/Ounce</button>
+	<button id='weightsButton3'>Pound/Ounce</button>
+	</div>
+	<div id='digree'>
+	<p>digree</p>
+	<button id='digreeButton'>Fehrenhait/Celecuis</button>
+	<button id='digreeButton1'>Fehrenhait/Kelvin</button>
+	<button id='digreeButton2'>Kelvin/Celecuis</button>
+	</div>
+	<div id="area">
+	<p>area</p>
+	<button id='areaButton'>Square Feet/Acres</button>
+	</div>
+	<div id="other">
+	<p>leotherngth</p>
+	<button id='otherButton'>Radian/Degree</button>
+	<button id='otherButton1'>MpH/KpH</button>
+	<button id='otherButton2'>Liter/Gallon</button>
+	<button id='otherButton3'>Milliliter/Cup</button>
+	</div>
+	<br />
 	<button id='clear'>clear</button>
 	<p id='alert'></p>
 	<script src='../jq.js'></script>

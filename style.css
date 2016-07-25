@@ -1,7 +1,19 @@
 h1 {
 	font-size : 200%% ;
+	background-color : #607D8B ;
+	color : white
 }
 * {
 	font-family: 'Source Sans Pro', sans-serif;
 	text-align : center ;
+}
+
+body {
+	width : 85% ;
+	margin : auto ;
+	
+}
+img {
+	width : 10% ;
+	height : auto
 }

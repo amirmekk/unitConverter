@@ -31,36 +31,37 @@ function fromFtoC(){
 };
 
 function change(){
-	if( firstText.innerHTML === 'Kilometers' || firstText.innerHTML === "Celsius") {
-		firstText.innerHTML = 'Kilograms' ;
-		secondText.innerHTML = "Pounds" ;
-	weightButton.innerHTML = "kilometers/Miles" ;
+
+	firstText.innerHTML = 'Kilograms' ;
+	secondText.innerHTML = "Pounds" ;
 	firstInput.oninput = fromKtoP ;
 	secondInput.oninput = fromPtoK ;
 	firstInput.value = '' ;
 	secondInput.value = '' ;
-	
-	} else if(firstText.innerHTML === 'Kilograms') {
-		firstText.innerHTML = 'Kilometers' ;
-		secondText.innerHTML = "Miles" ;
-	weightButton.innerHTML = "kilograms/pounds" ;
-	firstInput.oninput = fromKtoM ;
-	secondInput.oninput = fromMtoK;
-	firstInput.value = '' ;
-	secondInput.value = '' ;
-	} 
+
 	
 } ;
-function changedigree(){
-	if(firstText.innerHTML == 'Kilometers' || firstText.innerHTML == 'Kilograms' ){
+function changeDigree(){
 		firstText.innerHTML = 'Celsius' ;
 		secondText.innerHTML = "Fahrenheit";
 		firstInput.oninput = fromCtoF ;
 		secondInput.oninput = fromFtoC ;
-	}
+		firstInput.value = '' ;
+		secondInput.value = '' ;
+		
+};
+function changeDistance(){
+		firstText.innerHTML = 'Kilometers' ;
+		secondText.innerHTML = "Miles";
+		firstInput.oninput = fromKtoM ;
+		secondInput.oninput = fromMtoK ;
+		firstInput.value = '' ;
+		secondInput.value = '' ;
+		
 };
 $('#weightButton').on('click' , change)  ;
-$("#digreeButton").on("click" , changedigree);
+$("#digreeButton").on("click" , changeDigree);
+$("#distanceButton").on("click" , changeDistance) ;
 // This is the clear button function
 $('#clear').on('click' , function(){
 	firstInput.value = '' ;
