@@ -3,23 +3,20 @@
 <head>
 	<title>Unit Converter</title>
 	<meta charset='UTF-8' />
-	<!-- <link href='m.min.css' rel='stylesheet' type='text/css' /> -->
-	<link href='style.css' rel='stylesheet' type='text/css' />
-	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+	<link href='style.css' rel='stylesheet' type='text/css'  />
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet" /> 
+	<meta name='viewport' content="width=device-width,initial-scale=1.0, user-scalable=yes" />
 </head>
 <body>
-	<h1 id='firstH'>Welcome to my Units Converter</h1>
-	<form id='form1'>
-			<p id='firstText'>Kilometer</p><input id='firstInput' type='text' placeholder="Enter A Number"  />
+	<div>
+	<h1 id='firstH'>Units Converter</h1>
+	<form id='form1' class='row'>
+			<p id='firstText'>Kilometer</p><input id='firstInput' type='number' placeholder="Enter A Number"/>
+			<p id='secondText'>Mile</p><input id='secondInput' type='number' placeholder="Enter A Number" />
 	</form>
-		<!-- <img src='arrow.png' alt="change" />  -->
-	<form id='form2'>
-			<p id='secondText'>Mile</p><input id='secondInput' type='text' placeholder="Enter A Number"  /><br />
-		
-	</form>
-	<br />
-	<button id='clear'>clear</button>
-	<div id='length'>
+	<button id='clear' class="waves-effect waves-light btn-large red">clear</button>
+	<div id='length' class="card ">
 	<p>Length</p>
 	<button id='distanceButton'>Kilometer/Mile</button>
 	<button id='distanceButton1'>Centimeter/Inch</button>	
@@ -28,27 +25,29 @@
 	<button id='distanceButton4'>Centimeter/Feet</button>
 	<button id='distanceButton5'>Inch/Feet</button>
 	</div>
-	<div id='weight'>
+	<div id='weight' class="card">
 	<p>Weight</p>
 	<button id='weightButton'>Kilograme/Pound</button>
 	<button id='weightButton1'>Kilogram/Ounce</button>
 	<button id='weightButton2'>Gram/Ounce</button>
 	<button id='weightButton3'>Pound/Ounce</button>
 	</div>
-	<div id='digree'>
+	<div id='digree' class="card">
 	<p>Digree</p>
 	<button id='digreeButton'>Fehrenhait/Celecuis</button>
 	<button id='digreeButton1'>Fehrenhait/Kelvin</button>
 	<button id='digreeButton2'>Kelvin/Celecuis</button>
 	</div>
-	<div id="other">
+	<div id="other" class="card">
 	<p>Other</p>
 	<button id='otherButton'>Radian/Degree</button>
 	<button id='otherButton1'>MpH/KpH</button>
 	<button id='otherButton2'>Liter/Gallon</button>
 	</div>
 	<p id='alert'></p>
-	<script src='../jq.js'></script>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
 	<script src='app.js'></script>
 </body>
 </html>

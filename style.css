@@ -1,19 +1,22 @@
+p {
+	font-size: 150% ;
+}
 h1 {
-	font-size : 200%% ;
+	font-size : 300% ;
 	background-color : #607D8B ;
 	color : white
 }
 * {
 	font-family: 'Source Sans Pro', sans-serif;
-	text-align : center ;
+	
 }
 
 body {
 	width : 85% ;
 	margin : auto ;
+	text-align : center ;
 	
 }
-img {
-	width : 10% ;
-	height : auto
+button {
+	margin-bottom: 2% ;
 }

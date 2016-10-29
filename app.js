@@ -272,3 +272,6 @@ $('#clear').on('click' , function(){
 	firstInput.oninput = fromKtoM ;
 	secondInput.oninput = fromMtoK ;
 
+// responsive for other devices
+
+$("button").not(document.getElementById( "clear" )).addClass('btn waves-effect waves-light blue-grey darken-2') ;
